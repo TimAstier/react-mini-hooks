@@ -1,0 +1,24 @@
+{
+  "name": "react-mini-hooks",
+  "version": "1.0.0",
+  "description": "Reusable hooks for react components",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimAstier/react-mini-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "custom"
+  ],
+  "author": "Timothée Astier <timothee.astier@essec.edu> (https://github.com/TimAstier)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimAstier/react-mini-hooks/issues"
+  },
+  "homepage": "https://github.com/TimAstier/react-mini-hooks#readme"
+}
