@@ -1,3 +1,5 @@
+// @flow
+
 // TODO:
 const useToggle = () => {};
 
