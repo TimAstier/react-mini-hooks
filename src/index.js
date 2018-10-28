@@ -2,5 +2,5 @@
 const useToggle = () => {};
 
 module.exports = {
-  useToggle
+  useToggle,
 };
