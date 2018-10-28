@@ -3,5 +3,10 @@
     "ecmaVersion": 2018
   },
   "extends": ["eslint:recommended", "eslint-config-prettier"],
-  "rules": {}
+  "rules": {},
+  "env": {
+    "browser": true,
+    "node": true,
+    "amd": true
+  }
 }
