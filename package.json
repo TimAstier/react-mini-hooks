@@ -1,9 +1,13 @@
 {
   "name": "react-mini-hooks",
   "version": "1.0.0",
+  "author": "Timothée Astier <timothee.astier@essec.edu> (https://github.com/TimAstier)",
   "description": "Reusable hooks for react components",
   "main": "src/index.js",
+  "license": "MIT",
   "scripts": {
+    "lint": "eslint src",
+    "format": "prettier --write \"**/*.+(js|jsx|json|md)\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,10 +19,12 @@
     "hooks",
     "custom"
   ],
-  "author": "Timothée Astier <timothee.astier@essec.edu> (https://github.com/TimAstier)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/TimAstier/react-mini-hooks/issues"
   },
-  "homepage": "https://github.com/TimAstier/react-mini-hooks#readme"
+  "homepage": "https://github.com/TimAstier/react-mini-hooks#readme",
+  "devDependencies": {
+    "eslint": "5.8.0",
+    "prettier": "1.14.3"
+  }
 }
