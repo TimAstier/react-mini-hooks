@@ -4,12 +4,14 @@
     "ecmaVersion": 2018
   },
   "extends": ["eslint:recommended", "eslint-config-prettier"],
-  "rules": {},
+  "rules": {
+    "react-hooks/rules-of-hooks": "error"
+  },
   "env": {
     "browser": true,
     "node": true,
     "amd": true,
     "jest/globals": true
   },
-  "plugins": ["jest"]
+  "plugins": ["jest", "react-hooks"]
 }
