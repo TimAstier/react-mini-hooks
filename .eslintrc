@@ -3,7 +3,11 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
-  "extends": ["eslint:recommended", "eslint-config-prettier"],
+  "extends": [
+    "eslint:recommended",
+    "eslint-config-prettier",
+    "plugin:react/recommended"
+  ],
   "rules": {
     "react-hooks/rules-of-hooks": "error"
   },
@@ -11,7 +15,13 @@
     "browser": true,
     "node": true,
     "amd": true,
-    "jest/globals": true
+    "jest/globals": true,
+    "jest": true
   },
-  "plugins": ["jest", "react-hooks"]
+  "plugins": ["jest", "react-hooks"],
+  "settings": {
+    "react": {
+      "version": "16.7.0-alpha.0"
+    }
+  }
 }

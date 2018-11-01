@@ -1,8 +1,3 @@
-// @flow
+import useInput from './useInput';
 
-// TODO:
-const useToggle = () => {};
-
-module.exports = {
-  useToggle,
-};
+export {useInput};
