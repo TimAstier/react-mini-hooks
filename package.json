@@ -7,18 +7,18 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watch",
     "commit": "git-cz",
     "lint": "eslint src",
-    "flow": "flow",
     "prettier": "prettier --write \"**/*.+(js|jsx|json|md)\"",
     "format": "npm run prettier -- --write",
-    "validate": "npm run lint && npm run prettier -- --list-different && npm run flow && npm run test",
+    "validate": "npm run lint && npm run prettier -- --list-different && npm run test",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run flow"
+      "pre-commit": "lint-staged"
     }
   },
   "repository": {
@@ -36,17 +36,23 @@
   "homepage": "https://github.com/TimAstier/react-mini-hooks#readme",
   "devDependencies": {
     "babel-eslint": "10.0.1",
+    "babel-jest": "23.6.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
     "commitizen": "3.0.4",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "5.8.0",
     "eslint-config-prettier": "3.1.0",
     "eslint-plugin-jest": "21.26.2",
+    "eslint-plugin-react": "7.11.1",
     "eslint-plugin-react-hooks": "0.0.0",
-    "flow-bin": "0.84.0",
     "husky": "1.1.2",
     "jest": "23.6.0",
+    "jest-dom": "2.1.0",
     "lint-staged": "7.3.0",
     "prettier": "1.14.3",
+    "react-test-renderer": "16.6.0",
+    "react-testing-library": "5.2.3",
     "semantic-release": "^15.10.6",
     "travis-deploy-once": "^5.0.9"
   },
@@ -54,5 +60,9 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "react": "16.7.0-alpha.0",
+    "react-dom": "16.7.0-alpha.0"
   }
 }
